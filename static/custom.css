@@ -1,0 +1,39 @@
+/* --- Custom portfolio overrides --- */
+
+/* 16:9 box that crops images neatly */
+.project-thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* modern browsers */
+    overflow: hidden;
+    border-radius: 6px;
+    /* optional polish */
+}
+
+.project-thumb>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Equal-height cards and responsive alignment */
+.projects-carousel .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.projects-carousel .col-sm-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-carousel .card-container,
+.projects-carousel .card-container-lg {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
