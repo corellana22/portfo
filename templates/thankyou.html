@@ -11,8 +11,8 @@
   <meta name="msapplication-tap-highlight" content="no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
-  <link rel="icon" href="{{ url_for('static', filename='assets/images/soccer.ico') }}">
-
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/soccer.ico') }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/soccer.ico') }}">
   <title>Thank you — Chris Orellana</title>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='main.3f6952e4.css') }}">
@@ -34,7 +34,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav ">
-            <li><a href="./index.html">01 : Home</a></li>
+            <li><a href="/index.html">01 : Home</a></li>
             <li><a href="./works.html">02 : Works</a></li>
             <li><a href="./about.html">03 : About me</a></li>
             <li><a href="./contact.html">04 : Contact</a></li>
@@ -44,20 +44,37 @@
     </nav>
   </header>
 
-  <div class="section-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="section-container-spacer text-center">
-            <h1 class="h2">Thank you!</h1>
-          </div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              Thanks for reaching out — I’ll get in touch shortly!
-            </div>
-          </div>
-        </div>
+  <div class="section-container" style="display: flex; align-items: center; justify-content: center; min-height: 70vh;">
+    <div class="container text-center">
+
+      <!-- Icon / visual -->
+      <div style="font-size: 50px; margin-bottom: 15px;">
+        ✅
       </div>
+
+      <!-- Title -->
+      <h1 class="h2" style="margin-bottom: 10px;">Message Sent</h1>
+
+      <!-- Subtext -->
+      <p style="font-size: 16px; color: gray; margin-bottom: 25px;">
+        Thanks for reaching out — I’ll get back to you within 24–48 hours.
+      </p>
+
+      <!-- Buttons -->
+      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+
+        <a href="/index.html" class="btn btn-default btn-lg" style="transition: transform 0.2s;"
+          onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          Back to Home
+        </a>
+
+        <a href="/works.html" class="btn btn-default btn-lg" style="transition: transform 0.2s;"
+          onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          View My Work
+        </a>
+
+      </div>
+
     </div>
   </div>
 

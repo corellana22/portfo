@@ -42,11 +42,11 @@
           <!-- Right-side pager: set the active one for this page -->
           <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
             <li><a href="./work.html">001</a></li>
-            <li><a href="./work2.html" class="ACTIVE_FOR_002">002</a></li>
-            <li><a href="./work3.html" class="ACTIVE_FOR_003">003</a></li>
-            <li><a href="./work4.html" class="ACTIVE_FOR_004">004</a></li>
-            <li><a href="./work5.html" class="ACTIVE_FOR_005">005</a></li>
-            <li><a href="./work6.html" class="ACTIVE_FOR_006">006</a></li>
+            <li><a href="./work2.html">002</a></li>
+            <li><a href="./work3.html">003</a></li>
+            <li><a href="./work4.html">004</a></li>
+            <li><a href="./work5.html">005</a></li>
+            <li><a href="./work6.html" class="active">006</a></li>
           </ul>
         </div>
       </div>
@@ -61,60 +61,80 @@
           <img src="../static/assets/images/iris-hero.jpg" class="img-responsive" alt="Descriptive alt text">
           <div class="card-container">
             <div class="text-center">
-              <h1 class="h2">006 : Iris ML Classifier</h1>
+              <h1 class="h2">006 : Iris Species Classifier</h1>
             </div>
-            <p>Created a machine learning model to classify Iris flower species based on petal and sepal measurements.
-              Achieved high accuracy while visualizing decision boundaries and confusion matrices to demonstrate model
-              performance.</p>
-            <blockquote>
-              <p>“In the language of flowers, Sweet Iris embodies the virtues of faith and wisdom.”</p>
-              <small class="pull-right">Unknown</small>
-            </blockquote>
+
             <p><a href="./works.html">← Back to projects</a></p>
-          </div>
-        </div>
 
-        <!-- TWO HALF-WIDTH IMAGES -->
-        <div class="col-md-8 col-md-offset-2 section-container-spacer">
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <div class="project-thumb">
-                <img src="../static/assets/images/Iris-Training_Test.jpg" alt="Left image alt">
-              </div>
-              <p>Splitting Data into Training & Test Sets</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="project-thumb">
-                <img src="../static/assets/images/Iris-Accuracy.jpg" alt="Right image alt">
-              </div>
-              <p>K-Nearest Neighbor Model 96.7% Accurate</p>
-            </div>
-          </div>
-        </div>
+            <h3>Project Overview</h3>
+            <p>
+              Built a supervised machine learning classifier to predict Iris flower species using sepal and petal
+              measurements.
+              This project focused on understanding the basic machine learning workflow from data splitting to model
+              evaluation.
+            </p>
 
-        <!-- FULL-WIDTH IMAGE -->
-        <div class="col-xs-12">
-          <div class="project-thumb">
-            <img src="../static/assets/images/Iris-Predictor.jpg" alt="Bottom image alt">
+            <h3>Approach</h3>
+            <ul>
+              <li>Explored the Iris dataset and visualized relationships between flower measurements</li>
+              <li>Split data into training and testing sets</li>
+              <li>Trained a K-Nearest Neighbors classification model</li>
+              <li>Evaluated model performance using accuracy and prediction results</li>
+            </ul>
+
+            <h3>Key Takeaway</h3>
+            <p>
+              The K-Nearest Neighbors model achieved strong classification performance, demonstrating how simple
+              measurement-based
+              features can be used to separate Iris species effectively.
+            </p>
+
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Scikit-learn</li>
+              <li>Matplotlib / Seaborn</li>
+              <li>K-Nearest Neighbors</li>
+            </ul>
+
+            <h3>Project Resources</h3>
+            <p>
+              <a href="https://github.com/corellana22/iris-ml-classifier" target="_blank"
+                class="btn btn-default">GitHub</a>
+              <a href="https://github.com/corellana22/iris-ml-classifier/blob/main/Iris.ipynb" target="_blank"
+                class="btn btn-default">View Notebook</a>
+            </p>
+
+          </div>
+
+          <!-- FULL-WIDTH IMAGE -->
+          <div class="col-xs-12" style="margin-top: 40px;">
+            <h3 class="text-center">Model Prediction Example</h3>
+
+            <div style="max-width: 700px; margin: 0 auto;">
+              <img src="../static/assets/images/Iris-Predictor.jpg" class="img-responsive"
+                style="width: 100%; height: auto; display: block;" alt="Iris species prediction example">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="footer-container text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p>© Chris Orellana Portfolio | Built with <a href="http://www.mashup-template.com/">Mashup Template</a> / <a
-              href="https://www.unsplash.com/">Unsplash</a></p>
+    <footer class="footer-container text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>© Chris Orellana Portfolio | Built with <a href="http://www.mashup-template.com/">Mashup Template</a> /
+              <a href="https://www.unsplash.com/">Unsplash</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>document.addEventListener("DOMContentLoaded", function () { navActivePage(); });</script>
-  <script src="../static/main.70a66962.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () { navActivePage(); });</script>
+    <script src="../static/main.70a66962.js"></script>
 </body>
 
 </html>

@@ -63,40 +63,63 @@
             <div class="text-center">
               <h1 class="h2">005 : FIFA Player Valuation</h1>
             </div>
-            <p>Used regression and feature importance analysis on an 18,000-player FIFA dataset to predict player market
-              value. Identified key performance attributes influencing valuation and visualized predictive model
-              results.</p>
-            <blockquote>
-              <p>“For the Game. For the World.”</p>
-              <small class="pull-right">FIFA</small>
-            </blockquote>
-            <p><a href="./works.html">← Back to projects</a></p>
-          </div>
-        </div>
 
-        <!--IMAGE_LEFT TWO HALF-WIDTH IMAGES -->
-        <div class="col-md-8 col-md-offset-2 section-container-spacer">
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <div class="project-thumb">
-                <img src="../static/assets/images/Fifa-Overall.jpg" alt="Left image alt">
-              </div>
-              <p>Overall Ratings of Player Database</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="project-thumb">
-                <img src="../static/assets/images/Fifa-Potential.jpg" alt="Right image alt">
-              </div>
-              <p>Young Players with potential to become Best in the World</p>
-            </div>
+            <p><a href="./works.html">← Back to projects</a></p>
+
+            <h3>Project Overview</h3>
+            <p>
+              Built a sports analytics project using FIFA player data to analyze what factors influence player market
+              value.
+              The project focused on modeling valuation using player attributes, performance ratings, age, potential,
+              and position-based features.
+            </p>
+
+            <h3>Approach</h3>
+            <ul>
+              <li>Cleaned and explored an 18,000-player FIFA dataset</li>
+              <li>Analyzed relationships between player attributes, overall rating, potential, age, and market value
+              </li>
+              <li>Used regression modeling to estimate player value</li>
+              <li>Compared feature importance to identify the strongest drivers of valuation</li>
+              <li>Visualized trends among high-value players and young players with high potential</li>
+            </ul>
+
+            <h3>Key Takeaway</h3>
+            <p>
+              Player valuation was strongly influenced by overall rating, potential, age, and position-specific
+              performance attributes.
+              The project showed how sports data can be used to support scouting, player comparison, and valuation
+              analysis.
+            </p>
+
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Regression modeling</li>
+              <li>Feature importance analysis</li>
+              <li>Data visualization</li>
+            </ul>
+
+            <h3>Project Resources</h3>
+            <p>
+              <a href="https://github.com/corellana22/fifa-player-valuation" target="_blank"
+                class="btn btn-default">GitHub</a>
+              <a href="https://github.com/corellana22/fifa-player-valuation/blob/main/notebooks/fifa_player_valuation.ipynb"
+                target="_blank" class="btn btn-default">View Notebook</a>
+            </p>
           </div>
         </div>
 
         <!-- FULL-WIDTH IMAGE -->
-        <div class="col-xs-12">
-          <div class="project-thumb">
-            <img src="../static/assets/images/Fifa-Value.jpg" alt="Bottom image alt">
-          </div>
+        <div class="col-xs-12" style="margin-top: 40px;">
+          <h3 class="text-center">Interactive Player Valuation</h3>
+          <p class="text-center">
+            Hover over points to view player names, wages, and market values.
+          </p>
+
+          <iframe src="../static/assets/files/fifa_interactive.html" width="100%" height="700" frameborder="0">
+          </iframe>
         </div>
       </div>
     </div>
