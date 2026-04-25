@@ -1,0 +1,14 @@
+# Ignore data files
+database.csv
+
+# Ignore system files
+*.ini
+desktop.ini
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment (if you ever use one)
+venv/
