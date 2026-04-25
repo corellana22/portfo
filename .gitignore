@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore data files
 database.csv
 
@@ -12,3 +13,6 @@ __pycache__/
 
 # Virtual environment (if you ever use one)
 venv/
+=======
+database.csv
+>>>>>>> 60cc2b9 (Ignore database.csv)
